@@ -1,0 +1,13 @@
+setenv DISPLAY
+set corner tt
+set threshold rvt
+lappend search_path /app11/saed_32.28/SAED32_EDK/lib/stdcell_$threshold/db_ccs/ /app11/saed_32.28/SAED32_EDK/lib/sram/db_ccs/
+set target_library "saed32${threshold}\_${corner}1p05v125c.db"
+set link_library "* $target_library" 
+ 
+proc view {args} {
+    redirect tmpfile1212 {uplevel $args}
+    redirect /dev/null {exec ./tcl_procs/view.tk tmpfile1212 "$args" &}
+}
+
+alias vrt {view report_timing -nosplit}
