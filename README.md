@@ -12,6 +12,7 @@ RTL is written in verilog, where as the testbench is written in system verilog.
 ## Running The Simulation: 
 The simulation environment where it is tested is DC compiler. 
 In every part (SISO/MIMO/N-CHANNEL), there is a VCS folder. Type command: 'make all' to run the simulation.
+The Simulation takes the data from the ref folder. Ref folder keeps the golden data for each round as well. 
 
 ## Synthesis Procedure: 
 Few points to be noted. The constraint in the syntheis is in the unit of ns for time and fF for capacitance (as governed by our library). 
