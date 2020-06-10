@@ -26,7 +26,7 @@ To View the Design:
 3. Load AES_top.ddc
 
 ## Acknowledgement: 
-The part of the test bench is written by Saurabh Jain(User: @srbhjn459)
+The test bench aes_sbox.v and matrix_mult.v is written by Saurabh Jain(User: @srbhjn459)
 
 ## Resources
 Best way to learn about these concepts is : 
