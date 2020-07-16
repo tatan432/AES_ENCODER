@@ -25,6 +25,10 @@ To View the Design:
 2. Invoke Design Design Vision. (Command: design_vision-xg-t)
 3. Load AES_top.ddc
 
+To View the waveform:
+1. Go to vcs folder.
+2. Run Command : dve -full64 -vpd results.vpd
+
 ## Acknowledgement: 
 The test bench aes_sbox.v and matrix_mult.v is written by Saurabh Jain(User: @srbhjn459)
 
